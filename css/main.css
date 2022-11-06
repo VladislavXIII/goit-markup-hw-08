@@ -322,8 +322,16 @@ img {
   color: var(--second-text-color);
 }
 
-.about {
-  padding-bottom: 94px;
+@media screen and (max-width: 1199px) {
+  .about {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about {
+    visibility: visible;
+    padding-bottom: 94px;
+  }
 }
 
 .about__container {
@@ -347,7 +355,9 @@ img {
 }
 
 .project-list {
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .project-list__link {

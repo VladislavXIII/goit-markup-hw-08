@@ -1,5 +1,14 @@
 .about {
-    padding-bottom: 94px;
+    // @media screen and (max-width: 480px) {
+    //     visibility: hidden;
+    // }
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+    @media screen and (min-width: 1200px) {
+        visibility: visible;
+        padding-bottom: 94px;
+    }
 }
 .about__container {
     width: 1200px;
@@ -22,7 +31,9 @@
 }
 
 .project-list {
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .project-list__link {
