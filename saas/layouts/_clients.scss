@@ -1,36 +1,57 @@
 .clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+    
 }
 
 .clients__text {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     justify-content: center;
     align-content: center;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
+    font-size: 28px;
+    line-height: 1.18px;
     text-align: center;
     letter-spacing: 0.03em;
-
     color: #212121;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+        font-size: 36px;
+        line-height: 1.17px;
+    }
 }
 
 /* logo`s */
 .customer {
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .customer__item {
-    margin-right: 30px;
-    &:last-child {
-    margin-right: 0px;
+    width: calc((100% - 30px)/2);
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 60px)/3);
     }
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 150px)/6);
+    }
+    // width: 100%;
+    // margin-right: 30px;
+    // &:last-child {
+    // margin-right: 0px;
+    // }
 }
 
 .customer__link {
     display: flex;
-    width: 170px;
+    width: auto;
+    // width: 170px;
     height: 92px;
     justify-content: center;
     align-items: center;
