@@ -6,6 +6,19 @@
 
 .footer-container {
     display: flex;
+    @media screen and (min-width: 480px) {
+        width: 480px;
+        display: inline-block;
+        justify-content: center;
+        align-content: center;
+        
+    }
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
 }
 
 .logo--footer {
@@ -19,6 +32,9 @@
     color: #FFFFFF;
     /* margin-top: 60px; */
     margin-bottom: 20px;
+    @media screen and (min-width: 480px) {
+        font-size: 24px;
+        line-height: 1.17;
 }
 
 .logo__web{
@@ -137,12 +153,13 @@
 .footer-sub {
     margin-right: 0px;
     margin-left: auto;
+    
 }
 
 .footer-sub-text {
     font-weight: 700;
     font-size: 14px;
-    line-height: 1, 14;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
@@ -176,6 +193,9 @@
 
 .footer-sub-field {
     display: flex;
+    @media screen and (min-width: 480px) {
+        display: inline-block;
+    }
 }
 
 .footer-sub-btn {
