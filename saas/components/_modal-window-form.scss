@@ -125,6 +125,20 @@
     fill: #FFFFFF;
     }
 }
+.modal-i-agree{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    /* identical to box height */
+
+    letter-spacing: 0.03em;
+
+    color: #757575;
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+}
 
 .modal-agree-policy {
     color: var(--accent-color);

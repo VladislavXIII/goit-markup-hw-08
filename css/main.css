@@ -56,22 +56,6 @@ img {
 .header__container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
-@media screen and (min-width: 480px) {
-  .header__container {
-    width: 480px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .header__container {
-    width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .header__container {
-    width: 1200px;
-  }
 }
 
 /* header-logo */
@@ -173,13 +157,15 @@ img {
 @media screen and (min-width: 768px) {
   .connection {
     display: block;
-    margin-right: 15px;
+    margin-right: 0;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .connection {
     display: flex;
     margin-right: 0;
+    margin-left: auto;
   }
 }
 
@@ -1309,7 +1295,7 @@ img {
 
 .modal {
   position: absolute;
-  width: 528px;
+  width: 450px;
   min-height: 581px;
   left: 50%;
   top: 50%;
@@ -1318,6 +1304,11 @@ img {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -1487,6 +1478,21 @@ img {
   background-color: var(--accent-color);
   border-color: transparent;
   fill: #FFFFFF;
+}
+
+.modal-i-agree {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  /* identical to box height */
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+@media screen and (min-width: 1200px) {
+  .modal-i-agree {
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 
 .modal-agree-policy {
