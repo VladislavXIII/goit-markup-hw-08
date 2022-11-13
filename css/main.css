@@ -31,31 +31,38 @@ img {
 }
 
 .container {
-  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
   /* outline: 2px solid red; */
 }
-@media screen and (max-width: 480px) {
-  .container {
-    width: 480px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
-}
 
 .header__container {
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+@media screen and (min-width: 480px) {
+  .header__container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__container {
+    width: 768px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__container {
+    width: 1200px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
 }
 
 /* header-logo */
@@ -71,23 +78,11 @@ img {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #000000;
-}
-@media screen and (min-width: 768px) {
-  .header--logo {
-    margin-right: 88px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .header--logo {
-    margin-right: 93px;
-  }
 }
 
 .logo__web {
@@ -95,10 +90,8 @@ img {
 }
 
 /* header-navigation */
-@media screen and (min-width: 480px) {
-  .navigation__list {
-    display: none;
-  }
+.navigation__list {
+  display: none;
 }
 @media screen and (min-width: 768px) {
   .navigation__list {
@@ -143,16 +136,19 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 480px) {
+  .current::after {
+    display: none;
+  }
+}
 
 /* .header-link:hover::after,
 .header-link:focus::after{
     width: 100%;    
 } */
 /* contacts */
-@media screen and (min-width: 480px) {
-  .connection {
-    display: none;
-  }
+.connection {
+  display: none;
 }
 @media screen and (min-width: 768px) {
   .connection {
@@ -201,12 +197,34 @@ img {
 .connection__link-mail:hover, .connection__link-mail:focus {
   color: var(--accent-color);
 }
+@media screen and (min-width: 768px) {
+  .connection__link-mail {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .connection__link-mail {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
 
 .connection__mail-icon {
-  width: 16px;
-  height: 12px;
   margin-right: 10px;
   fill: currentColor;
+}
+@media screen and (min-width: 768px) {
+  .connection__mail-icon {
+    width: 14px;
+    height: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .connection__mail-icon {
+    width: 16px;
+    height: 12px;
+  }
 }
 
 .connection__link-tel {
@@ -224,10 +242,34 @@ img {
 .connection__link-tel:hover, .connection__link-tel:focus {
   color: var(--accent-color);
 }
+@media screen and (min-width: 768px) {
+  .connection__link-tel {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .connection__link-tel {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
 
 .connection__tel-icon {
   margin-right: 10px;
   fill: currentColor;
+}
+@media screen and (min-width: 768px) {
+  .connection__tel-icon {
+    width: 10px;
+    height: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .connection__tel-icon {
+    width: 10px;
+    height: 16px;
+  }
 }
 
 .mobmenu-open {
@@ -562,6 +604,11 @@ img {
   text-transform: uppercase;
   color: var(--top-text-color);
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .skill__top-text {
+    text-align: start;
+  }
 }
 
 .skill__second-text {
@@ -938,7 +985,7 @@ img {
   align-content: center;
   font-weight: 700;
   font-size: 28px;
-  line-height: 1.18px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -947,7 +994,7 @@ img {
   .clients__text {
     margin-bottom: 50px;
     font-size: 36px;
-    line-height: 1.17px;
+    line-height: 1.17;
   }
 }
 
@@ -1011,7 +1058,7 @@ img {
   background-color: #212121;
   padding-top: 60px;
   padding-bottom: 60px;
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   text-align: center;
 }
